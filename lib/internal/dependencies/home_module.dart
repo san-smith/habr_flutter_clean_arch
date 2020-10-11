@@ -1,9 +1,9 @@
-import 'package:habr_flutter_clean_arch/domain/state/home/home_state.dart';
+import 'package:habr_flutter_clean_arch/domain/bloc/home_bloc.dart';
 import 'package:habr_flutter_clean_arch/internal/dependencies/repository_module.dart';
 
 class HomeModule {
-  static HomeState homeState() {
-    return HomeState(
+  static HomeBloc homeBloc() {
+    return HomeBloc(
       RepositoryModule.dayRepository(),
     );
   }
